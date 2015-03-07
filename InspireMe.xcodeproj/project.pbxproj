@@ -13,6 +13,12 @@
 		96E136961AAA357900012BF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E136951AAA357900012BF5 /* Images.xcassets */; };
 		96E136991AAA357900012BF5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E136971AAA357900012BF5 /* LaunchScreen.xib */; };
 		96E136A51AAA357900012BF5 /* InspireMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E136A41AAA357900012BF5 /* InspireMeTests.swift */; };
+		96E136B71AAA359C00012BF5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E136B61AAA359C00012BF5 /* InterfaceController.swift */; };
+		96E136B91AAA359C00012BF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E136B81AAA359C00012BF5 /* Images.xcassets */; };
+		96E136BD1AAA359C00012BF5 /* InspireMe WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 96E136BC1AAA359C00012BF5 /* InspireMe WatchKit App.app */; };
+		96E136C51AAA359C00012BF5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E136C31AAA359C00012BF5 /* Interface.storyboard */; };
+		96E136C71AAA359C00012BF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E136C61AAA359C00012BF5 /* Images.xcassets */; };
+		96E136CA1AAA359C00012BF5 /* InspireMe WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 96E136B21AAA359C00012BF5 /* InspireMe WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +29,35 @@
 			remoteGlobalIDString = 96E136881AAA357900012BF5;
 			remoteInfo = InspireMe;
 		};
+		96E136BE1AAA359C00012BF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E136811AAA357900012BF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96E136BB1AAA359C00012BF5;
+			remoteInfo = "InspireMe WatchKit App";
+		};
+		96E136C81AAA359C00012BF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E136811AAA357900012BF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96E136B11AAA359C00012BF5;
+			remoteInfo = "InspireMe WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		96E136D11AAA359C00012BF5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				96E136CA1AAA359C00012BF5 /* InspireMe WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		96E136891AAA357900012BF5 /* InspireMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InspireMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +70,14 @@
 		96E1369E1AAA357900012BF5 /* InspireMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InspireMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E136A31AAA357900012BF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96E136A41AAA357900012BF5 /* InspireMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspireMeTests.swift; sourceTree = "<group>"; };
+		96E136B21AAA359C00012BF5 /* InspireMe WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "InspireMe WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E136B51AAA359C00012BF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E136B61AAA359C00012BF5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		96E136B81AAA359C00012BF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		96E136BC1AAA359C00012BF5 /* InspireMe WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InspireMe WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E136C21AAA359C00012BF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E136C41AAA359C00012BF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		96E136C61AAA359C00012BF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +95,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		96E136AF1AAA359C00012BF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +110,8 @@
 			children = (
 				96E1368B1AAA357900012BF5 /* InspireMe */,
 				96E136A11AAA357900012BF5 /* InspireMeTests */,
+				96E136B31AAA359C00012BF5 /* InspireMe WatchKit Extension */,
+				96E136C01AAA359C00012BF5 /* InspireMe WatchKit App */,
 				96E1368A1AAA357900012BF5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +121,8 @@
 			children = (
 				96E136891AAA357900012BF5 /* InspireMe.app */,
 				96E1369E1AAA357900012BF5 /* InspireMeTests.xctest */,
+				96E136B21AAA359C00012BF5 /* InspireMe WatchKit Extension.appex */,
+				96E136BC1AAA359C00012BF5 /* InspireMe WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +165,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		96E136B31AAA359C00012BF5 /* InspireMe WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				96E136B61AAA359C00012BF5 /* InterfaceController.swift */,
+				96E136B81AAA359C00012BF5 /* Images.xcassets */,
+				96E136B41AAA359C00012BF5 /* Supporting Files */,
+			);
+			path = "InspireMe WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		96E136B41AAA359C00012BF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96E136B51AAA359C00012BF5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96E136C01AAA359C00012BF5 /* InspireMe WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				96E136C31AAA359C00012BF5 /* Interface.storyboard */,
+				96E136C61AAA359C00012BF5 /* Images.xcassets */,
+				96E136C11AAA359C00012BF5 /* Supporting Files */,
+			);
+			path = "InspireMe WatchKit App";
+			sourceTree = "<group>";
+		};
+		96E136C11AAA359C00012BF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96E136C21AAA359C00012BF5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +211,12 @@
 				96E136851AAA357900012BF5 /* Sources */,
 				96E136861AAA357900012BF5 /* Frameworks */,
 				96E136871AAA357900012BF5 /* Resources */,
+				96E136D11AAA359C00012BF5 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				96E136C91AAA359C00012BF5 /* PBXTargetDependency */,
 			);
 			name = InspireMe;
 			productName = InspireMe;
@@ -150,6 +241,39 @@
 			productReference = 96E1369E1AAA357900012BF5 /* InspireMeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		96E136B11AAA359C00012BF5 /* InspireMe WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96E136CE1AAA359C00012BF5 /* Build configuration list for PBXNativeTarget "InspireMe WatchKit Extension" */;
+			buildPhases = (
+				96E136AE1AAA359C00012BF5 /* Sources */,
+				96E136AF1AAA359C00012BF5 /* Frameworks */,
+				96E136B01AAA359C00012BF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96E136BF1AAA359C00012BF5 /* PBXTargetDependency */,
+			);
+			name = "InspireMe WatchKit Extension";
+			productName = "InspireMe WatchKit Extension";
+			productReference = 96E136B21AAA359C00012BF5 /* InspireMe WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		96E136BB1AAA359C00012BF5 /* InspireMe WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96E136CB1AAA359C00012BF5 /* Build configuration list for PBXNativeTarget "InspireMe WatchKit App" */;
+			buildPhases = (
+				96E136BA1AAA359C00012BF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "InspireMe WatchKit App";
+			productName = "InspireMe WatchKit App";
+			productReference = 96E136BC1AAA359C00012BF5 /* InspireMe WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +289,12 @@
 					96E1369D1AAA357900012BF5 = {
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = 96E136881AAA357900012BF5;
+					};
+					96E136B11AAA359C00012BF5 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					96E136BB1AAA359C00012BF5 = {
+						CreatedOnToolsVersion = 6.3;
 					};
 				};
 			};
@@ -183,6 +313,8 @@
 			targets = (
 				96E136881AAA357900012BF5 /* InspireMe */,
 				96E1369D1AAA357900012BF5 /* InspireMeTests */,
+				96E136B11AAA359C00012BF5 /* InspireMe WatchKit Extension */,
+				96E136BB1AAA359C00012BF5 /* InspireMe WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +334,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96E136B01AAA359C00012BF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E136B91AAA359C00012BF5 /* Images.xcassets in Resources */,
+				96E136BD1AAA359C00012BF5 /* InspireMe WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96E136BA1AAA359C00012BF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E136C51AAA359C00012BF5 /* Interface.storyboard in Resources */,
+				96E136C71AAA359C00012BF5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +375,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		96E136AE1AAA359C00012BF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E136B71AAA359C00012BF5 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +390,16 @@
 			isa = PBXTargetDependency;
 			target = 96E136881AAA357900012BF5 /* InspireMe */;
 			targetProxy = 96E1369F1AAA357900012BF5 /* PBXContainerItemProxy */;
+		};
+		96E136BF1AAA359C00012BF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96E136BB1AAA359C00012BF5 /* InspireMe WatchKit App */;
+			targetProxy = 96E136BE1AAA359C00012BF5 /* PBXContainerItemProxy */;
+		};
+		96E136C91AAA359C00012BF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96E136B11AAA359C00012BF5 /* InspireMe WatchKit Extension */;
+			targetProxy = 96E136C81AAA359C00012BF5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +418,14 @@
 				96E136981AAA357900012BF5 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		96E136C31AAA359C00012BF5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96E136C41AAA359C00012BF5 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -340,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = InspireMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = InspireMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,6 +568,60 @@
 			};
 			name = Release;
 		};
+		96E136CC1AAA359C00012BF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = InspireMe_WatchKit_Extension;
+				INFOPLIST_FILE = "InspireMe WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		96E136CD1AAA359C00012BF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = InspireMe_WatchKit_Extension;
+				INFOPLIST_FILE = "InspireMe WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		96E136CF1AAA359C00012BF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "InspireMe WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		96E136D01AAA359C00012BF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "InspireMe WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +647,22 @@
 			buildConfigurations = (
 				96E136AC1AAA357900012BF5 /* Debug */,
 				96E136AD1AAA357900012BF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		96E136CB1AAA359C00012BF5 /* Build configuration list for PBXNativeTarget "InspireMe WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E136CC1AAA359C00012BF5 /* Debug */,
+				96E136CD1AAA359C00012BF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		96E136CE1AAA359C00012BF5 /* Build configuration list for PBXNativeTarget "InspireMe WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E136CF1AAA359C00012BF5 /* Debug */,
+				96E136D01AAA359C00012BF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
